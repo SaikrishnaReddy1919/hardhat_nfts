@@ -17,5 +17,12 @@
     "prettier-plugin-solidity": "^1.0.0-rc.1",
     "solhint": "^3.3.7",
     "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "fs": "^0.0.1-security",
+    "mime": "^3.0.0",
+    "nft.storage": "^7.0.0",
+    "path": "^0.12.7"
   }
 }
