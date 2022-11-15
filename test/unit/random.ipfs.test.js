@@ -4,7 +4,7 @@ const { assert, expect } = require("chai")
 const { network, deployments, ethers } = require("hardhat")
 const { developmentChains } = require("../../helper-hardhat-config")
 
-!developmentChains.includes(network.name)
+developmentChains.includes(network.name)
     ? describe.skip
     : describe("Random IPFS NFT Unit Tests", function () {
           let randomIpfsNft, deployer, vrfCoordinatorV2Mock
