@@ -31,8 +31,8 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
     if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
         log("Verifying...")
-        await verify(dynamicNftContract.address, arguments)
+        await verify(dynamicNftContract.address, args)
     }
 }
 
-module.exports.tags = ["all", "dynamicsvg"]
+module.exports.tags = ["all", "dynamicsvg", "main"]
